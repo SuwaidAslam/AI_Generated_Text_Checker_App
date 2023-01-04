@@ -44,8 +44,8 @@ class AppCallback:
     def __init__(self, app):
         self.app = app
         logging.set_verbosity_error()
-        tokenizer = AutoTokenizer.from_pretrained("roberta-base-openai-detector")
-        model = AutoModelForSequenceClassification.from_pretrained("roberta-base-openai-detector")
+        tokenizer = AutoTokenizer.from_pretrained("./roberta-base-openai-detector")
+        model = AutoModelForSequenceClassification.from_pretrained("./roberta-base-openai-detector")
         self.classifier = pipeline("sentiment-analysis", model=model, tokenizer=tokenizer)
 
         self.app.callback([
