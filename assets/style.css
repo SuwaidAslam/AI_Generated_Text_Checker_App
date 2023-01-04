@@ -1,0 +1,31 @@
+body {
+    background-color: #ffffff;
+    color: black;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    min-height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.025rem;
+}
+
+
+.sidebar {
+  position: fixed;
+  background-color: #F4FAFC;
+  top: 0rem;
+  left: 0rem;
+  bottom: 0rem;
+  width: 16rem;
+  height: 100rem;
+  padding: 2rem 1rem;
+  background-color: #f8f9fa;
+  border-right: 1px solid gray;
+}
+
+.content {
+  margin-right: 2rem;
+  margin-left: 18rem;
+  padding: 2rem 1rem;
+}
