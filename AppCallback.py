@@ -93,19 +93,19 @@ class AppCallback:
             if label == 'Real':
                 real_score = score*100
                 fake_score = 100-real_score
-                real_score_lable = f"{real_score:.2f}%"
+                real_score_lable = f"{real_score:.0f}%"
                 if int(fake_score) < 10:
                     fake_score_lable = ""
                 else:
-                    fake_score_lable =f"{fake_score:.2f}%"
+                    fake_score_lable =f"{fake_score:.0f}%"
             else:
                 fake_score = score*100
                 real_score = 100-fake_score
-                fake_score_lable = f"{fake_score:.2f}%"
+                fake_score_lable = f"{fake_score:.0f}%"
                 if int(real_score) < 10:
                     real_score_lable = ""
                 else:
-                    real_score_lable =f"{real_score:.2f}%"
+                    real_score_lable =f"{real_score:.0f}%"
 
 
             return [real_score, real_score_lable, fake_score, fake_score_lable, '']

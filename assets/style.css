@@ -1,16 +1,14 @@
 body {
     background-color: #ffffff;
-    color: black;
     margin: 0;
     padding: 0;
     max-width: 100%;
     min-height: 100%;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
+    font-family: 'Lato', sans-serif;
     letter-spacing: 0.025rem;
 }
 
-
+/* 
 .sidebar {
   position: fixed;
   background-color: #F4FAFC;
@@ -22,10 +20,58 @@ body {
   padding: 2rem 1rem;
   background-color: #f8f9fa;
   border-right: 1px solid gray;
-}
+} */
 
-.content {
+/* .content {
   margin-right: 2rem;
   margin-left: 18rem;
   padding: 2rem 1rem;
+} */
+
+.content {
+  margin-right: 0;
+  margin-left: 0;
+  /* padding: 2rem 1rem; */
+}
+
+.header {
+  background-color: #222222;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header_title {
+  color: #FFFFFF;
+  /* font-size: 48px; */
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.header_description {
+  color: #CFCFCF;
+  margin: 4px auto;
+  text-align: center;
+  max-width: 384px;
+}
+
+.card {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 20px 10px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+.upload-style {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border-width: 1px;
+  border-style: dashed;
+  border-radius: 5px;
+  text-align: center;
+  margin-top : 10px;
+  font-size: 1.3vw;
 }

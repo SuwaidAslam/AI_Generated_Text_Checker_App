@@ -17,6 +17,8 @@ class AppLayout:
                         ], vertical=True, pills=True
                     ),
             ],
+            # just remove this and uncomment the style for sidebar in style.css if sidebar needs to be displayed
+            style={'display': 'none'}
         )
         return sidebar
     # this method generates content Page Layout

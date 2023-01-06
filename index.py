@@ -6,9 +6,7 @@ from AppCallback import AppCallback
 
 
 styles = [dbc.themes.BOOTSTRAP]
-app = Dash(name = __name__, 
-    meta_tags=[{"name": "viewport", "content": "width=device-width, initial-scale=1"}],
-    external_stylesheets=styles)
+app = Dash(name = __name__, external_stylesheets=styles)
 app.title = "Dashboard"
 app.config["suppress_callback_exceptions"] = True
 server = app.server
