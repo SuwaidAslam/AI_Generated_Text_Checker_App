@@ -9,6 +9,7 @@ import base64
 import io
 import docx2txt
 import PyPDF2
+import os
 
 
 
@@ -44,8 +45,11 @@ class AppCallback:
     def __init__(self, app):
         self.app = app
         logging.set_verbosity_error()
-        tokenizer = AutoTokenizer.from_pretrained("roberta-base-openai-detector")
-        model = AutoModelForSequenceClassification.from_pretrained("roberta-base-openai-detector")
+        absolute_path = os.path.dirname(__file__)
+        relative_path = "./roberta-base-openai-detector/"
+        full_path = os.path.join(absolute_path, relative_path)
+        tokenizer = AutoTokenizer.from_pretrained(full_path, local_files_only=True)
+        model = AutoModelForSequenceClassification.from_pretrained(full_path, local_files_only=True)
         self.classifier = pipeline("sentiment-analysis", model=model, tokenizer=tokenizer)
 
         self.app.callback([
