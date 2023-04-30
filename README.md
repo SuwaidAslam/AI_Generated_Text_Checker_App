@@ -18,7 +18,9 @@ https://user-images.githubusercontent.com/45914161/216013963-e0427ebc-f794-4608-
 
 # How to Run
 
-To see the project working, just clone the repository and install all required libraries within requirements.txt file and run the project :)
+
+To see the project working, just clone the repository and install all required libraries within requirements.txt file and replace the `roberta-base-openai-detector` directory with the following after unziping it: https://drive.google.com/file/d/16Be7V62ew3PVf5pbxNOr_uLB1CTGpYg-/view?usp=sharing
+and run the project :)
 
 - Clone the repository
 - Setup Virtual environment
